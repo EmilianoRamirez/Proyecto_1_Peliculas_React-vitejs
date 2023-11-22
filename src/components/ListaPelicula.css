@@ -1,0 +1,115 @@
+.listaPelicula {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  transition: transform 0.5s ease;
+}
+
+.cardPelicula {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  height: 220px;
+  overflow: visible;
+  margin: 0.5em 2px;
+  border: 1px solid black;
+  border-radius: 0 0.5em 0.5em 0;
+  transition: transform 0.5s ease;
+  min-width: 605px;
+}
+
+.imgPelicula {
+  flex: 0 0 auto;
+  width: 120px;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.imgPelicula:hover {
+  transform: scale(1.1);
+}
+
+.detallePelicula {
+  margin-left: 1em;
+}
+
+.tituloPelicula {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.minimos {
+  display: flex;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  color: darkgrey;
+  font-weight: bold;
+}
+.minimos p {
+  margin: 0 2px 0 0;
+}
+
+.listaGenero {
+  display: flex;
+  align-items: center;
+}
+
+.genero {
+  margin-right: 5px;
+}
+
+.calificacion {
+  display: flex;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  align-items: flex-end;
+}
+.calificacion p {
+  margin: 0 5px 0 0;
+}
+
+.resumen {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.personajes {
+  display: flex;
+  font-size: 0.8em;
+  color: rgb(221, 108, 108);
+  font-weight: bold;
+}
+
+.listaActores {
+  display: flex;
+  align-items: center;
+}
+
+.director {
+  margin: 0 5px 0 0;
+}
+
+.actores {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 920px) {
+  .listaPelicula {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .listaPelicula {
+    width: 95vw;
+  }
+
+  .tituloPelicula {
+    font-size: 1.2em;
+  }
+
+  .resumen {
+    font-size: 12px;
+  }
+}
